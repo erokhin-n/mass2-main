@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta-name = “viewport” content=”width=device-width, initial-scale=1.0, maximum-scale=1.0 , user-scalable=0”> 
+  <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(74617684, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/74617684" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+	<title>Document</title>
+	<meta name="format-detection" content="telephone=no" />
+</head>
+<body>
+<div class="wrapper">
+	<header class="header" id= 'header'>
+		<nav class="header_menu">
+			<ul class="header_list">
+				<li><div class="menu_link menu_heading">НАЗВАНИЕ САЙТА</div></li>
+				<li><div class="menu_link" onclick = 'head_mass_show()'>виды массажа</div></li>
+				<li><div class="menu_link" onclick='scroll_to_view(event)'>обо мне</div></li>
+				<li><div class="menu_link" onclick = 'show_contact()'>контакты</div></li>
+			</ul>
+		</nav>
+		<div class="hidden" id = 'curtain'></div>
+	</header>
+	<main class="main">
+		<section class="massage_views" id='massage_sect'>
+			<div class="hidden_views" id='header_mass_views'>
+			  <div class="head_close_opac" onclick = 'close_views()' id= "close_but"><span class="cross"></span></div>
+			  <div class="hidden" onclick='scroll_to_view(event)' id = "head_view_1">Детский массаж
+        </div>
+			  <div class="hidden" onclick='scroll_to_view(event)' id = "head_view_2">Взрослый классический массаж</div>
+			  <div class="hidden" onclick='scroll_to_view(event)' id = "head_view_3">Применение лечебных банок (Вакуум терапия)</div>
+		  </div>
+		  <div class="hidden" id = 'contact_cont'>
+		    <div class="hidden" onclick = 'close_contact()' id= "close_cont">
+		      <span class="cross_cont" id = 'cross_cont'></span>
+		    </div>
+		    <div class="hidden" id = 'contacts'>8 965 789 43 11</div>
+		  </div>
+			<div class="hidden" id="button_up" onclick="scroll_up()">
+			</div>
+			<!-- 1------------- -->
+			<div class="massage_view_1_r" id="massage_view_1">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head">Детский массаж</h2>
+					<p class="description_text" id="desc_text">
+						Детский массаж – это эффективная и полезная процедура для укрепления здоровья, путем механического и рефлекторного воздействия на кожу, мышцы, кости и внутренние органы (через систему рефлексогенных зон).
+            Массажные движения повышают мозговую активность (за счёт рефлекторного воздействия), способствуют правильному развитию опорно-двигательного аппарата, улучшают кровообращение и тем самым обогащают клетки организма кислородом, нормализуют мышечный тонус.  Физиологические процессы, происходящие в детском организме, активизируются. Это обеспечивает ребенку хорошее самочувствие 
+            и настроение. Массаж рекомендуется каждому малышу, как для профилактики заболеваний, так и при наличии патологии.<br><br>
+
+            Различают следующие виды детского массажа:
+            ПРОФИЛАКТИЧЕСКИЙ (гигиенический) массаж – активное средство профилактики и предупреждения заболеваний, применяется для общего оздоровления.
+            ЛЕЧЕБНЫЙ массаж является эффективным методом лечения различных травм и заболеваний. Назначается врачом с целью решить конкретную проблему, начиная с 2-3 месячного возраста малыша, при особых обстоятельствах с 4-х недель жизни. 
+            КОРРЕКЦИОННЫЙ массаж назначают для закрепления результатов курса лечебного массажа и предотвращения повторного заболевания.
+          </p>
+				</div>
+				<div class="desc_img img_1" id="desc_img"></div>
+			</div>
+			<!-- 2-------------------- -->
+			<div class="hidden" id="massage_view_2">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head">Взрослый классический массаж.</h2>
+					<p class="description_text" id="desc_text">
+						Классический массаж - первое средство, к которому можно обратиться для решения ряда проблем со здоровьем и повышения общего тонуса организма. Этот массаж снимает напряжение мышц, способствует расслаблению и вытяжению позвоночника. Он также благотворно влияет и на эмоциональное состояние, позволяет прийти к внутреннему равновесию и гармонии.
+
+            Сеансы общего массажа – это отличная оздоровительная процедура для всего организма. Уже после первого сеанса уходят усталость и переутомление, улучшается настроение. После общего массажа Вы почувствуете необыкновенную легкость и прилив новых сил. Классический массаж оказывает сильное воздействие на весь организм. Он усиливает обменные процессы, способствует выведению шлаков из организма, тем самым оказывая мощный оздоравливающий эффект. Интенсивный курс общего массажа помогает снизить вес и улучшить тонус мышц.
+            Для достижения стойкого результата и заметного улучшения самочувствия рекомендуется курс из 10-12 сеансов.
+
+          </p>
+				</div>
+				<div class="desc_img img_2" id="desc_img"></div>
+			</div>
+			<!-- 3------------------------ -->
+			<div class="hidden" id="massage_view_3">
+				<div class="description_cont" id = 'description_cont'>
+					<h2 class="description_heading" id="desc_head">Применение лечебных банок (Вакуум терапия)</h2>
+					<p class="description_text" id="desc_text">
+						Целью баночного массажа является воздействие вакуума на кожные рецепторы, при этом происходит значительный прилив крови к тканям. В такой момент происходит разрушение подкожной жировой клетчатки, а также улучшается циркуляция лимфы, крови и межтканевой жидкости. Кроме того, метаболические, восстановительные и иммунные процессы в тканях ускоряются в десятки, а порою и в сотни раз, что в свою очередь приводит к повышению иммунитета.
+            Под воздействием такой вакуумной терапии увеличивается секреторная работа сальных и потовых желез, с помощью которых из организма удаляются соли, мочевина, желчные кислоты и ацетон. Кроме того, уменьшаются отеки в тканях, и улучшается питание и дыхание кожи на подвергающемся массажу участке кожи, то есть эффект очищения не хуже, а может быть, даже лучше, чем при посещении сауны. Также благотворно баночный массаж сказывается и на мышечном аппарате массируемой области. При этом улучшается не только сократительная функция мышц, но и подвижность связочного аппарата. Кожа после проведения вакуумной терапии становится более упругой, гладкой и эластичной.
+          </p>
+				</div>
+				<div class="desc_img img_3" id="desc_img"></div>
+			</div>
+			<!-- =========== -->
+			<div class="button_right" id="button_right" onclick='right_click()'></div>
+			<div class="button_left" id="button_left" onclick='left_click()'></div>
+			<!-- ================= -->
+		</section>
+		<!-- обо мне -->
+		<section class="about_me" id="about_sect">
+			<div class="about_me_1">
+				<div class="about_img_cont" id='about_me'>
+				</div>
+				<div class="about_cont">
+					<h2 class="about_heading">ОБО МНЕ</h2>
+					<p class="about_text">Рад приветствовать Вас, уважаемые посетители сайта. 
+Меня зовут Косоногов Олег Олегович, я сертифицированный специалист в области детского и взрослого лечебного массажа. 
+Вот уже более 10 лет я тружусь в научно-практическом центре детской психоневрологии.  Накоплен большой практический опыт применения средств и методов физической реабилитации в профилактических и лечебных целях. Данный сайт был создан для предоставления и оказания услуг массажа, лечебной гимнастики, применения баночной (вакуум) терапии для взрослых, детей и подростков.
+С уважением, Косоногов Олег Олегович.
+</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+	</footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
