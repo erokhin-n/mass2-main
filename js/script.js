@@ -143,18 +143,19 @@ function close_views() {
 function scroll_to_view(event) {
 	massage_sect.scrollIntoView({behavior: "smooth"});
   let click_event = event.target;
+  console.log(click_event.textContent)
   switch (click_event.textContent){
-    case "первый вид массажа":
+    case "Детский массаж":
       massage_view_2.setAttribute('class', 'hidden');
       massage_view_3.setAttribute('class', 'hidden');
-      massage_view_1.setAttribute('class', 'massage_view_1_l');
+      massage_view_1.setAttribute('class', 'massage_view_1_r');
       break;
-    case "второй вид массажа":
+    case "Взрослый классический массаж":
       massage_view_1.setAttribute('class', 'hidden');
       massage_view_3.setAttribute('class', 'hidden');
       massage_view_2.setAttribute('class', 'massage_view_2_r');
       break; 
-    case "третий вид массажа":
+    case "Применение лечебных банок (Вакуум терапия)":
       massage_view_1.setAttribute('class', 'hidden');
       massage_view_2.setAttribute('class', 'hidden');
       massage_view_3.setAttribute('class', 'massage_view_3_l');

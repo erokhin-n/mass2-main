@@ -369,6 +369,14 @@ body {
   animation : l_click_show 0.3s linear;
 }
 
+.menu_heading {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0px 0px 10px #000;
+  /*cursor: pointer;*/
+  /*transition: 0.4s;*/
+}
+
 
 .menu_link {
   font-size: 48px;
@@ -401,9 +409,9 @@ body {
 }
 
 .description_cont {
-  text-align: center;
+  text-align: left;
   display: grid;
-  grid-template: 30% 70% / 1fr;
+  grid-template: 15% 85% / 1fr;
 }
 
 
@@ -431,6 +439,7 @@ body {
   font-size: 36px;
   align-self: end;
   font-family: 'Inter', sans-serif;
+  padding: 0px 0px 0px 30px;
   /*font-weight: 300;*/
   /*border-bottom: 1px solid #000;*/
   /*box-shadow: 1px 1px 1px 1px #000;*/
@@ -442,7 +451,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 100;
   padding: 30px 30px 10px 30px;
-
+  line-height: 125%;
+  overflow-y: auto;
 }
 
 
@@ -762,14 +772,17 @@ body {
 }
 
 .about_cont {
-  text-align: center;
+  text-align: left;
   display: grid;
+  grid-template: 30% 70% / 1fr;
+  font-family: 'Inter', sans-serif;
 }
 
 .about_heading {
   font-size: 36px;
   align-self: end;
   font-family: 'Inter', sans-serif;
+  padding: 50px
 }
 
 .about_img_cont {
@@ -783,8 +796,12 @@ body {
 }
 
 .about_text {
-  font-size: 14px;
+  font-size: 20px;
   font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  padding: 50px;
+  line-height: 146%;
+  overflow-y: auto;
 }
 
 .footer {
@@ -821,6 +838,16 @@ body {
   animation: showV 0.4s linear;
   transition: 0.5s;
 }
+
+  .contacts-footer{
+    color: #fff;
+  display: grid;
+  max-width: 100%;
+  max-height: 45%;
+  font-size: 36px;
+  border-radius: 10px;
+  cursor: pointer; 
+  }
 
 .contacts_opac {
   animation: disappear 0.4s linear;
@@ -876,13 +903,17 @@ body {
 @media (min-device-width: 320px) and (max-device-width: 1023px) and (orientation: portrait)  { 
   .menu_heading {
     font-size: 80px;
+    pointer-events: none;
+      /*font-size: 48px;*/
+  color: #fff;
+  text-shadow: 0px 0px 10px #000;
   }
   .menu_link {
     font-size: 90px;
   }
-  .menu_heading:hover { 
+/*  .menu_heading:hover { 
     font-size: 80px;
-  }
+  }*/
   .massage_view_1_r, .massage_view_2_r, .massage_view_3_r,
   .massage_view_1_l, .massage_view_2_l, .massage_view_3_l,
   .massage_view_hide,
@@ -892,13 +923,18 @@ body {
   }
   .description_cont {
     grid-template: 20% 80% / 1fr;
+
   }
   .description_heading {
     font-size: 76px;
     align-self: center;
+    text-align: center;
+
   }
   .description_text {
     font-size: 52px;
+    overflow-y: auto;
+   
   }
   .about_me_1 {
     grid-template: 1fr 1fr/ 1fr;
@@ -920,6 +956,8 @@ body {
   }
   .about_text {
     font-size: 58px;
+    overflow-y: auto;
+    overflow-y: auto;
   }
 
   .button_up:before, .button_up:after,
