@@ -3,7 +3,9 @@
 * {
   padding: 0;
   margin: 0;
-  border: 0; }
+  border: 0; 
+  -webkit-text-size-adjust: 80%;
+}
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -202,7 +204,7 @@ body {
 
 .header_massage_views, .head_mass_down {
   position: absolute;
-  min-height: 80vh;
+  min-height: 60vh;
   font-size: 45px;
   background-color: rgba(0, 0, 0, 0);
   display: grid;
@@ -411,7 +413,7 @@ body {
 .description_cont {
   text-align: left;
   display: grid;
-  grid-template: 15% 85% / 1fr;
+  grid-template: 10% 85% / 1fr;
 }
 
 
@@ -452,7 +454,11 @@ body {
   font-weight: 100;
   padding: 30px 30px 10px 30px;
   line-height: 125%;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
+}
+
+.desk_text1 {
+  font-size: 14px;
 }
 
 
@@ -801,11 +807,11 @@ body {
   font-weight: 100;
   padding: 50px;
   line-height: 146%;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
 }
 
 .footer {
-  background-color: #7b3f00;
+  background-color: #000055;
   box-shadow: 0px 1px 16px 4px #000
 }
 
@@ -840,7 +846,7 @@ body {
 }
 
   .contacts-footer{
-    color: #fff;
+  color: #fff;
   display: grid;
   max-width: 100%;
   max-height: 45%;
@@ -919,45 +925,67 @@ body {
   .massage_view_hide,
   .massage_view_hide_r,
   .massage_view_hide_l {
-    grid-template: 1fr 1fr  / 1fr;
+    grid-template: 0.6fr 0.4fr /1fr;
   }
+
+  .massage_view_2_r,
+  .massage_view_2_l{
+    grid-template: 0.7fr 0.3fr/1fr 
+  }
+
+  .massage_view_3_r,
+  .massage_view_3_l{
+    grid-template: 0.75fr 0.25fr /1fr;
+  }
+
   .description_cont {
-    grid-template: 20% 80% / 1fr;
+    grid-template: 5% 95% / 1fr;
 
   }
+
   .description_heading {
-    font-size: 76px;
+    font-size: 60px;
     align-self: center;
     text-align: center;
 
   }
   .description_text {
     font-size: 52px;
-    overflow-y: auto;
-   
+    /*overflow-y: auto;*/
+    line-height: 138%;
   }
+  
+  .desc_img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
   .about_me_1 {
-    grid-template: 1fr 1fr/ 1fr;
+    grid-template: 0.4fr 0.6fr/ 1fr;
     grid-template-areas: 
       "ab-cont"
       "ab_me_img"
   }
   .about_img_cont {
     grid-area: ab_me_img;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .about_cont {
     grid-area: ab-cont;
     display: grid;
-    grid-template: 20% 80% / 1fr;
+    grid-template: 5% 95% / 1fr;
   }
   .about_heading {
-    font-size: 89px;
+    font-size: 80px;
     align-self: center;
   }
   .about_text {
     font-size: 58px;
-    overflow-y: auto;
-    overflow-y: auto;
+ /*   overflow-y: auto;
+    overflow-y: auto;*/
   }
 
   .button_up:before, .button_up:after,
@@ -1010,6 +1038,7 @@ body {
   .contact_cont, .contact_cont_hide {
     min-width:  100%;
     min-height: 40vh;
+    bottom: 100%;
   }
 
   .contacts, .contacts_opac {

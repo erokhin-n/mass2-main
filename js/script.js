@@ -28,7 +28,8 @@ window.addEventListener('scroll', function() {
   let scroll_height = document.documentElement.scrollHeight;
   let scroll_procent = Math.floor((scroll_px / scroll_height) * 100);
   let scroll_proc = document.getElementById('scroll_proc');
-
+  console.log(`скрол рх: ${scroll_procent} скролл высота: ${scroll_height}`)
+  console.log(`итоговый процент: ${scroll_procent}`)
   if (scroll_procent > 30){
   	button_up.setAttribute('class', 'button_up');
   } else if (scroll_procent < 30 && button_up.className === 'button_up') {
