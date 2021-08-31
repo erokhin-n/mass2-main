@@ -363,9 +363,9 @@ body {
   animation: l_click_hide 0.3s linear;
 }
 
-.massage_view_1_r, .massage_view_2_r, .massage_view_3_r {
+/*.massage_view_1_r, .massage_view_2_r, .massage_view_3_r {
   animation: r_click_show 0.3s linear;
-}
+}*/
 
 .massage_view_1_l, .massage_view_2_l, .massage_view_3_l {
   animation : l_click_show 0.3s linear;
@@ -780,7 +780,7 @@ body {
 .about_cont {
   text-align: left;
   display: grid;
-  grid-template: 30% 70% / 1fr;
+  grid-template: 25% 70% / 1fr;
   font-family: 'Inter', sans-serif;
 }
 
@@ -811,7 +811,7 @@ body {
 }
 
 .footer {
-  background-color: #000055;
+  background-color: #964B00;
   box-shadow: 0px 1px 16px 4px #000
 }
 
