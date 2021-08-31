@@ -54,9 +54,9 @@ let massage_sect = document.getElementById('massage_sect');
 
 
 
-function scroll_up() {
-	header.scrollIntoView({behavior: "smooth"});
-}
+// function scroll_up() {
+// 	header.scrollIntoView({behavior: "smooth"});
+// }
 
 
 function right_click(){
