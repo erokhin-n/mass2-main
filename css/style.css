@@ -305,7 +305,7 @@ body {
 
 .header_list {
   display: grid;
-  grid-template: repeat(4, 1fr) / 1fr;
+  grid-template: repeat(5, 1fr) / 1fr;
   align-items: center;
   justify-items: center;
   min-width: 100%;
@@ -386,6 +386,7 @@ body {
   text-shadow: 0px 0px 10px #000;
   cursor: pointer;
   transition: 0.4s;
+  display: block;
 }
 
 .menu_link:hover {

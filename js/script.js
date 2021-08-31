@@ -59,50 +59,50 @@ let massage_sect = document.getElementById('massage_sect');
 // }
 
 
-function right_click(){
-	if(massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
-    massage_view_1.setAttribute('class', 'massage_view_hide_r');
-	  setTimeout(()=>{
-		  massage_view_1.setAttribute('class', 'hidden');
-		  massage_view_2.setAttribute('class', 'massage_view_2_r');
-	  }, 200);
-  } else if (massage_view_1.className === 'hidden' && massage_view_3.className === 'hidden') {
-  	massage_view_2.setAttribute('class', 'massage_view_hide_r');
-	  setTimeout(()=>{
-		  massage_view_2.setAttribute('class', 'hidden');
-		  massage_view_3.setAttribute('class', 'massage_view_3_r');
-	  }, 200);
-  } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
-    massage_view_3.setAttribute('class', 'massage_view_hide_r');
-	  setTimeout(()=>{
-		  massage_view_3.setAttribute('class', 'hidden');
-		  massage_view_1.setAttribute('class', 'massage_view_1_r');
-	  }, 200);
-  }
-}
+// function right_click(){
+// 	if(massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
+//     massage_view_1.setAttribute('class', 'massage_view_hide_r');
+// 	  setTimeout(()=>{
+// 		  massage_view_1.setAttribute('class', 'hidden');
+// 		  massage_view_2.setAttribute('class', 'massage_view_2_r');
+// 	  }, 200);
+//   } else if (massage_view_1.className === 'hidden' && massage_view_3.className === 'hidden') {
+//   	massage_view_2.setAttribute('class', 'massage_view_hide_r');
+// 	  setTimeout(()=>{
+// 		  massage_view_2.setAttribute('class', 'hidden');
+// 		  massage_view_3.setAttribute('class', 'massage_view_3_r');
+// 	  }, 200);
+//   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
+//     massage_view_3.setAttribute('class', 'massage_view_hide_r');
+// 	  setTimeout(()=>{
+// 		  massage_view_3.setAttribute('class', 'hidden');
+// 		  massage_view_1.setAttribute('class', 'massage_view_1_r');
+// 	  }, 200);
+//   }
+// }
 
 
-function left_click(){
-  if( massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
-    massage_view_1.setAttribute('class', 'massage_view_hide_l');
-	  setTimeout(()=>{
-		  massage_view_1.setAttribute('class', 'hidden');
-		  massage_view_3.setAttribute('class', 'massage_view_3_l');
-	  }, 200);
-  } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
-  	massage_view_3.setAttribute('class', 'massage_view_hide_l');
-	  setTimeout(()=>{
-		  massage_view_3.setAttribute('class', 'hidden');
-		  massage_view_2.setAttribute('class', 'massage_view_2_l');
-	  }, 200);
-  } else if (massage_view_3.className === 'hidden' && massage_view_1.className === 'hidden') {
-  	massage_view_2.setAttribute('class', 'massage_view_hide_l');
-	  setTimeout(()=>{
-		  massage_view_2.setAttribute('class', 'hidden');
-		  massage_view_1.setAttribute('class', 'massage_view_1_l');
-	  }, 200);
-  }
-}
+// function left_click(){
+//   if( massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
+//     massage_view_1.setAttribute('class', 'massage_view_hide_l');
+// 	  setTimeout(()=>{
+// 		  massage_view_1.setAttribute('class', 'hidden');
+// 		  massage_view_3.setAttribute('class', 'massage_view_3_l');
+// 	  }, 200);
+//   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
+//   	massage_view_3.setAttribute('class', 'massage_view_hide_l');
+// 	  setTimeout(()=>{
+// 		  massage_view_3.setAttribute('class', 'hidden');
+// 		  massage_view_2.setAttribute('class', 'massage_view_2_l');
+// 	  }, 200);
+//   } else if (massage_view_3.className === 'hidden' && massage_view_1.className === 'hidden') {
+//   	massage_view_2.setAttribute('class', 'massage_view_hide_l');
+// 	  setTimeout(()=>{
+// 		  massage_view_2.setAttribute('class', 'hidden');
+// 		  massage_view_1.setAttribute('class', 'massage_view_1_l');
+// 	  }, 200);
+//   }
+// }
 
  
 function head_mass_show() {
@@ -144,25 +144,8 @@ function close_views() {
 }
 
 function scroll_to_view(event) {
-	massage_sect.scrollIntoView({behavior: "smooth"});
   let click_event = event.target;
-  console.log(click_event.textContent)
   switch (click_event.textContent){
-    case "Детский массаж":
-      massage_view_2.setAttribute('class', 'hidden');
-      massage_view_3.setAttribute('class', 'hidden');
-      massage_view_1.setAttribute('class', 'massage_view_1_r');
-      break;
-    case "Взрослый классический массаж":
-      massage_view_1.setAttribute('class', 'hidden');
-      massage_view_3.setAttribute('class', 'hidden');
-      massage_view_2.setAttribute('class', 'massage_view_2_r');
-      break; 
-    case "Применение лечебных банок (Вакуум терапия)":
-      massage_view_1.setAttribute('class', 'hidden');
-      massage_view_2.setAttribute('class', 'hidden');
-      massage_view_3.setAttribute('class', 'massage_view_3_l');
-      break; 
     case "обо мне":
       about_sect.scrollIntoView({behavior: "smooth"}); 
       break;   
