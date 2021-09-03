@@ -210,7 +210,7 @@ body {
   display: grid;
   justify-content: center;
   border-radius: 10px;
-  bottom: 94%;
+  bottom: 91%;
   /*right: 18%;*/
   /*left: 18%;*/
   color: rgba(0, 0, 0, 0);
@@ -240,6 +240,7 @@ body {
   padding: 26px 40px 33px 24px;
   animation: showV 0.4s linear;
   transition: 0.5s;
+  text-align: center;
 }
 
 .head_close {
@@ -395,7 +396,11 @@ body {
 .menu_heading {
   font-size: 48px;
   color: #fff;
-  text-shadow: 0px 0px 10px #000;
+  /*text-shadow: 0px 0px 10px #000;*/
+  text-shadow: 16px 31px 35px #0ff;
+  box-shadow: 44px 40px 44px #0ff, 44px 4px 44px #0ff;
+  border-radius: 5px;
+  background-color: #ffg 5px ;  
   /*cursor: pointer;*/
   /*transition: 0.4s;*/
 }
@@ -928,23 +933,27 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (min-device-width: 320px) and (max-device-width: 1023px) and (orientation: portrait)  { 
+@media (min-device-width: 199px) and (max-device-width: 1023px) and (orientation: portrait)  { 
   .menu_heading {
     font-size: 80px;
     pointer-events: none;
       /*font-size: 48px;*/
-  color: #fff;
-  text-shadow: 0px 0px 10px #000;
+    color: #fff;
+    /*text-shadow: 0px 0px 10px #000;*/
+    text-align: center;
+    /*text-shadow: 16px 31px 35px #0ff;*/
   }
   .menu_link {
     font-size: 90px;
   }
   .header_massage_views, .head_mass_down {
-    top: 107%;
+    bottom: 107%;
   }
-/*  .menu_heading:hover { 
-    font-size: 80px;
-  }*/
+
+  .head_view {
+    font-size: 53px;
+  }
+
   .massage_view_1_r, .massage_view_2_r, .massage_view_3_r,
   .massage_view_1_l, .massage_view_2_l, .massage_view_3_l,
   .massage_view_hide,
