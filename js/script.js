@@ -147,7 +147,7 @@ function scroll_to_view(event) {
   let click_event = event.target;
   switch (click_event.textContent){
     case "обо мне":
-      about_sect.scrollIntoView({behavior: "smooth"}); 
+      massage_sect.scrollIntoView({behavior: "smooth"}); 
       break;   
   }
 }

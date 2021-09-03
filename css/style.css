@@ -204,24 +204,45 @@ body {
 
 .header_massage_views, .head_mass_down {
   position: absolute;
-  min-height: 60vh;
-  font-size: 45px;
+  min-height: 80vh;
+  /*font-size: 45px;*/
   background-color: rgba(0, 0, 0, 0);
   display: grid;
   justify-content: center;
   border-radius: 10px;
-  bottom: 107%;
-  right: 18%;
-  left: 18%;
+  bottom: 94%;
+  /*right: 18%;*/
+  /*left: 18%;*/
   color: rgba(0, 0, 0, 0);
   animation: up_head_views 0.5s linear;
+  padding: 10% 150px;
 }
 
 .head_mass_down {
   animation: down_head_views 0.7s linear;
 }
 
-.head_view, .head_close {
+.head_view {
+  color: #fff;
+  display: grid;
+  min-width: 100%;
+  max-height: 50%;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer; 
+  /*background-color: #fff;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  /*padding: 15% 0 0 0;*/
+  align-content: center;
+  filter: 0px;
+  /*filter: none;*/
+  padding: 26px 40px 33px 24px;
+  animation: showV 0.4s linear;
+  transition: 0.5s;
+}
+
+.head_close {
   color: #fff;
   display: grid;
   min-width: 100%;
@@ -244,7 +265,7 @@ body {
 .head_close {
   min-width: 9px;
   justify-self: end;
-  padding: 0px 84px 0px 0px;
+  padding: 25px 84px 25px 0px;
   display: grid;
   justify-content: start;
   /*animation: rotate 0.4s linear;*/
@@ -917,6 +938,9 @@ body {
   }
   .menu_link {
     font-size: 90px;
+  }
+  .header_massage_views, .head_mass_down {
+    top: 107%;
   }
 /*  .menu_heading:hover { 
     font-size: 80px;
