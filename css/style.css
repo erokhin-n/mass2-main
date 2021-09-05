@@ -835,6 +835,11 @@ body {
   line-height: 146%;
   /*overflow-y: auto;*/
 }
+/*
+.map{
+  width: 100%;
+  height: 400px;
+}*/
 
 .footer {
   background-color: #964B00;
@@ -958,17 +963,17 @@ body {
   .massage_view_hide,
   .massage_view_hide_r,
   .massage_view_hide_l {
-    grid-template: 0.6fr 0.4fr /1fr;
+    grid-template: 0.6fr 0.7fr /1fr;
   }
 
   .massage_view_2_r,
   .massage_view_2_l{
-    grid-template: 0.7fr 0.3fr/1fr 
+    grid-template: 0.7fr 0.5fr/1fr 
   }
 
   .massage_view_3_r,
   .massage_view_3_l{
-    grid-template: 0.75fr 0.25fr /1fr;
+    grid-template: 0.5fr 0.4fr /1fr;
   }
 
   .description_cont {
@@ -986,6 +991,7 @@ body {
     font-size: 52px;
     /*overflow-y: auto;*/
     line-height: 138%;
+    margin-bottom: 20px;
   }
   
   .desc_img {
@@ -994,8 +1000,14 @@ body {
     background-position: bottom;
   }
 
+  /*.desc_img_3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }*/
+
   .about_me_1 {
-    grid-template: 0.4fr 0.6fr/ 1fr;
+    grid-template: 0.4fr 1.1fr/ 1fr;
     grid-template-areas: 
       "ab-cont"
       "ab_me_img"
@@ -1009,12 +1021,18 @@ body {
   .about_cont {
     grid-area: ab-cont;
     display: grid;
-    grid-template: 5% 95% / 1fr;
+    grid-template: 17% 70% / 1fr;
   }
   .about_heading {
     font-size: 80px;
     align-self: center;
   }
+
+ /* .map{
+   width: auto;
+   height: 800px;
+  }*/
+
   .about_text {
     font-size: 58px;
  /*   overflow-y: auto;
