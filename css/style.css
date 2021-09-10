@@ -183,7 +183,7 @@ body {
 .header {
   display: grid;
   min-height: 100vh;
-  background-image: url('../img/header.jpg');
+  background-image: url('../img/header.jpeg');
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -452,7 +452,7 @@ body {
 }
 
 .img_1 {
-  background-image: url('../img/mass_view_img_1.jpg');
+  background-image: url('../img/mass_view_img_1.jpeg');
 }
 
 .img_2 {
@@ -460,7 +460,7 @@ body {
 }
 
 .img_3 {
-  background-image: url('../img/mass_view_img_3.jpg');
+  background-image: url('../img/mass_view_img_3.jpeg');
 }
 
 .description_heading {
