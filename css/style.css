@@ -327,7 +327,7 @@ body {
 
 .header_list {
   display: grid;
-  grid-template: repeat(5, 1fr) / 1fr;
+  grid-template: repeat(4, 1fr) / 1fr;
   align-items: center;
   justify-items: center;
   min-width: 100%;
@@ -460,7 +460,7 @@ body {
 }
 
 .img_3 {
-  background-image: url('../img/mass_view_img_3.jpg');
+  background-image: url('../img/mass_view_img_3.jpeg');
 }
 
 .description_heading {
@@ -806,7 +806,7 @@ body {
 .about_cont {
   text-align: left;
   display: grid;
-  grid-template: 25% 70% / 1fr;
+  grid-template: 1fr / 1fr;
   font-family: 'Inter', sans-serif;
 }
 
@@ -830,10 +830,11 @@ body {
 .about_text {
   font-size: 20px;
   font-family: 'Inter', sans-serif;
-  font-weight: 100;
+  /*font-weight: 100;*/
   padding: 50px;
   line-height: 146%;
   /*overflow-y: auto;*/
+  display: grid;
 }
 /*
 .map{
@@ -849,7 +850,7 @@ body {
 .contact_cont, .contact_cont_hide {
   position: absolute;
   display: grid;
-  bottom: 141%;
+  bottom: 100%;
   min-height: 50vh;
   min-width: 100%;
   animation: showV 0.4s linear;
@@ -973,7 +974,7 @@ body {
 
   .massage_view_3_r,
   .massage_view_3_l{
-    grid-template: 0.5fr 0.4fr /1fr;
+    grid-template: 1fr 0.5fr /1fr;
   }
 
   .description_cont {
@@ -1000,6 +1001,10 @@ body {
     background-position: bottom;
   }
 
+  .img_3 {
+    background-image: url('../img/mass_view_img_3_mob.jpeg');
+  }
+
   /*.desc_img_3 {
     background-size: contain;
     background-repeat: no-repeat;
@@ -1007,7 +1012,7 @@ body {
   }*/
 
   .about_me_1 {
-    grid-template: 0.4fr 1.1fr/ 1fr;
+    grid-template: 1fr 0.7fr/ 1fr;
     grid-template-areas: 
       "ab-cont"
       "ab_me_img"
