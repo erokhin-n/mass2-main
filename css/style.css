@@ -326,12 +326,14 @@ body {
 }
 
 .header_list {
-  display: grid;
-  grid-template: repeat(4, 1fr) / 1fr;
+  display: flex;
+  /*grid-template: repeat(4, 1fr) / 1fr;*/
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   justify-items: center;
   min-width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .hidden {
@@ -370,10 +372,11 @@ body {
 .massage_view_hide_l {
   min-width: 100%;
   min-height: 100vh;
-  display: grid;
-  grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );
+  /*display: grid;*/
+  /*grid-template: minmax( 100%, 1fr ) / repeat( 2, 1fr );*/
   position: relative;
   /*box-shadow: 0px 1px 15px 1px #000;*/
+  display: flex;
 
 }
 
@@ -386,12 +389,13 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   margin: 10px auto;
-  border-radius: 5px;
+  border-radius: 15px;
   display: block;
   cursor: pointer;
   vertical-align: middle;
   text-align: center;
   font-size: 48px;
+  margin-bottom: 4%;
 }
 
 .massage_view_hide_r {
@@ -455,8 +459,9 @@ body {
 
 .description_cont {
   text-align: left;
-  display: grid;
-  grid-template: 0.1fr 1fr 0.1fr / 1fr;
+  /*display: grid;*/
+  /*grid-template: 0.1fr 1fr 0.1fr / 1fr;*/
+  max-width: 50%;
 }
 
 
@@ -466,6 +471,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; 
+  min-width: 50%;
 }
 
 .img_1 {
@@ -816,15 +822,18 @@ body {
 .about_me_1 {
   min-width: 100%;
   min-height: 100vh;
-  display: grid;
-  grid-template: 1fr / repeat(2, 1fr);
+  /*display: grid;*/
+  /*grid-template: 1fr / repeat(2, 1fr);*/
+  display:flex;
 }
 
 .about_cont {
   text-align: left;
-  display: grid;
-  grid-template: 1fr / 1fr;
+  display: flex;
+  /*grid-template: 1fr / 1fr;*/
   font-family: 'Inter', sans-serif;
+  flex-direction: column;
+  max-width: 50%;
 }
 
 .about_heading {
@@ -842,12 +851,13 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  min-width: 50%;
 }
 
 .about_text {
   font-size: 20px;
   font-family: 'Inter', sans-serif;
-  /*font-weight: 100;*/
+  font-weight: 100;
   padding: 50px;
   line-height: 146%;
   /*overflow-y: auto;*/
@@ -976,12 +986,14 @@ body {
     font-size: 53px;
   }
 
+
   .massage_view_1_r, .massage_view_2_r, .massage_view_3_r,
   .massage_view_1_l, .massage_view_2_l, .massage_view_3_l,
   .massage_view_hide,
   .massage_view_hide_r,
   .massage_view_hide_l {
-    grid-template: 0.6fr 0.7fr /1fr;
+    /*grid-template: 0.6fr 0.7fr /1fr;*/
+    flex-direction: column;
   }
 
   .massage_view_2_r,
@@ -994,9 +1006,11 @@ body {
     grid-template: 1fr 0.5fr /1fr;
   }
 
-  .description_cont {
-    grid-template: 5% 95% / 1fr;
-
+ .description_cont {
+  text-align: left;
+  /*display: grid;*/
+  /*grid-template: 0.1fr 1fr 0.1fr / 1fr;*/
+  min-width: 100%;
   }
 
   .dc_2 {
@@ -1017,13 +1031,23 @@ body {
   }
   
   .desc_img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  min-width: 100%;
+  min-height: 100vh;
+  }
+
+  .img_2 {
+    background-image: url('../img/mass_view_img_2.jpg');
+    min-height: 43vh;
   }
 
   .img_3 {
     background-image: url('../img/mass_view_img_3_mob.jpeg');
+    min-height: 45vh;
   }
 
   /*.desc_img_3 {
@@ -1033,34 +1057,32 @@ body {
   }*/
 
   .about_me_1 {
-    grid-template: 1fr 0.7fr/ 1fr;
-    grid-template-areas: 
-      "ab-cont"
-      "ab_me_img"
+    flex-direction: column;
   }
   .about_img_cont {
-    grid-area: ab_me_img;
-    background-size: contain;
+    /*grid-area: ab_me_img;*/
+    /*background-size: contain;*/
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
+    min-width: 100%;
+    min-height: 76vh;
+    background-color: #000;
   }
   .about_cont {
-    grid-area: ab-cont;
-    display: grid;
-    grid-template: 17% 70% / 1fr;
+    min-width: 100%;
   }
   .about_heading {
     font-size: 80px;
     align-self: center;
   }
 
- /* .map{
-   width: auto;
-   height: 800px;
-  }*/
+  .map{
+   width: 100%;
+   min-height: 800px;
+  }
 
   .about_text {
-    font-size: 58px;
+    font-size: 50px;
  /*   overflow-y: auto;
     overflow-y: auto;*/
   }
