@@ -1048,7 +1048,7 @@ body {
 
   .img_2 {
     background-image: url('../img/mass_view_img_2.jpg');
-    min-height: 43vh;
+    /*min-height: 43vh;*/
   }
 
   .img_3 {
