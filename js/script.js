@@ -184,20 +184,20 @@ function cover_curtain_hide() {
 }
 
 function cookie_on(){
-	document.cookie;
-	document.cookie = 'да';
+	// document.cookie
+	document.cookie = 'да'
   console.log(`кука он: ${document.cookie}`)
 }
 
 function cookie_off(){
-	document.cookie;
+	// document.cookie
 	document.cookie = 'нет'
 	console.log(`кука офф: ${document.cookie}`)
 }
 
 console.log(`показано ли меню?: ${document.cookie}`)
 
-if(document.cookie === 'да') head_mass_show()
+if(document.cookie === "да") head_mass_show()
 else close_views()
 
 // const cordX = [];
