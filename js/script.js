@@ -194,7 +194,14 @@ function cond_views(){
 	 	header_mass_views.setAttribute('class', 'header_massage_views_ss');
    view_3.setAttribute('class', 'head_view_ss');
   }
-  else {close_views()}
+  else {
+
+	  close_but.setAttribute('class', 'hidden');
+   view_1.setAttribute('class', 'hidden')
+		 view_2.setAttribute('class', 'hidden');
+	 	header_mass_views.setAttribute('class', 'hidden');
+   view_3.setAttribute('class', 'hidden');
+  }
 }
 
 cond_views()
