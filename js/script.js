@@ -185,7 +185,15 @@ function cover_curtain_hide() {
 
 function cond_views(){
 	let views_condition = sessionStorage.getItem('show_views')
-	if(views_condition === "show") {head_mass_show()}
+	if(views_condition === "show") {
+		 header.setAttribute('class', 'header header_blur_ss');
+	  close_but.setAttribute('class', 'head_close_ss');
+	  cover_curtain();
+   view_1.setAttribute('class', 'head_view_ss')
+		 view_2.setAttribute('class', 'head_view_ss');
+	 	header_mass_views.setAttribute('class', 'header_massage_views_ss');
+   view_3.setAttribute('class', 'head_view_ss');
+  }
   else {close_views()}
 }
 
