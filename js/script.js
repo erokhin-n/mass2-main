@@ -106,7 +106,7 @@ let massage_sect = document.getElementById('massage_sect');
 
  
 function head_mass_show() {
-	cookie_on()
+ sessionStorage.setItem('show_views', "show")
 	header.setAttribute('class', 'header header_blur');
 	close_but.setAttribute('class', 'head_close');
 	cover_curtain();
@@ -123,7 +123,7 @@ function head_mass_show() {
 }
 
 function close_views() {
-	cookie_off()
+  sessionStorage.setItem('show_views', "hide")
 	view_3.setAttribute('class', 'head_v_opac');
 	header_mass_views.setAttribute('class', 'head_mass_down');
 	// console.log('1');
@@ -183,22 +183,13 @@ function cover_curtain_hide() {
 	curtain.setAttribute('class', 'hidden');
 }
 
-function cookie_on(){
-	// document.cookie
-	document.cookie = 'да'
-  console.log(`кука он: ${document.cookie}`)
+function cond_views(){
+	let views_condition = sessionStorage.getItem('show_views')
+	if(views_condition === "show") {head_mass_show()}
+  else {close_views()}
 }
 
-function cookie_off(){
-	// document.cookie
-	document.cookie = 'нет'
-	console.log(`кука офф: ${document.cookie}`)
-}
-
-console.log(`показано ли меню?: ${document.cookie}`)
-
-if(document.cookie === "да") head_mass_show()
-else close_views()
+cond_views()
 
 // const cordX = [];
 // const cordY = [];
@@ -232,4 +223,3 @@ else close_views()
 //   }
 // }
  
-
