@@ -1043,7 +1043,7 @@ body {
 @media (min-device-width: 150px) and (orientation: landscape) {
   .about_img_cont{
     background-position: top;
-    background-image: url('../img/photo_1_opera.jpg');
+    background-image: url('../img/photo_1.jpg');
   }
 }
 
