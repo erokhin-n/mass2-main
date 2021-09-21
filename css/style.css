@@ -1040,6 +1040,13 @@ body {
   transform: rotate(-45deg);
 }
 
+@media (min-device-width: 150px) and (orientation: landscape) {
+  .about_img_cont{
+    background-position: top;
+    background-image: url('../img/photo_1_opera.jpg');
+  }
+}
+
 @media (min-device-width: 199px) and (max-device-width: 1024px) and (orientation: portrait)  { 
   .menu_heading {
     font-size: 80px;
@@ -1248,3 +1255,4 @@ body {
     background-position: -19px 42%;
   }
 }
+
