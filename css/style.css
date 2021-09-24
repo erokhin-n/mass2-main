@@ -947,6 +947,16 @@ body {
   padding: 5% 0 0 5%;
 }
 
+.about_surname{
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  line-height: 146%;
+  /*overflow-y: auto;*/
+  /*display: grid;*/
+  text-indent: 10%; 
+  margin-bottom: 10px;
+}
 
 .about_ul{
   padding-left: 10%;
@@ -1195,7 +1205,7 @@ body {
     align-self: center;
   }
   .about_list {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .map{
@@ -1210,9 +1220,17 @@ body {
     text-indent: 0;
   }
 
+  .about_ul {
+    padding-left: 7%;
+  }
+
   .about_text_sale{
     font-size: 50px;
     padding-bottom:10%;
+  }
+
+  .about_surname{
+
   }
 
   .button_up:before, .button_up:after,
