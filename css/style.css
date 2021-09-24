@@ -50,8 +50,8 @@ a, a:visited {
 a:hover {
   text-decoration: none; }
 
-ul li {
-  list-style: none; }
+/*ul li {
+  list-style: none; }*/
 
 img {
   vertical-align: top; }
@@ -408,6 +408,7 @@ body {
   justify-items: center;
   min-width: 100%;
   min-height: 100%;
+  list-style: none;
 }
 
 .hidden {
@@ -930,13 +931,39 @@ body {
 }
 
 .about_text {
-  font-size: 20px;
+  font-size: 14px;
   font-family: 'Inter', sans-serif;
   font-weight: 100;
-  padding: 50px;
+  padding: 5%;
   line-height: 146%;
   /*overflow-y: auto;*/
   display: grid;
+  text-indent: 10%;
+  /*white-space: nowrap*/
+}
+
+.about_text_sale{
+  font-weight: 400;
+  padding: 5% 0 0 5%;
+}
+
+
+.about_ul{
+  padding-left: 10%;
+  list-style-type: disc;
+  /*list-style-position: outside;*/
+}
+
+.about_list{
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  padding: 0 0 2% 0;
+  line-height: 146%;
+  /*overflow-y: auto;*/
+  /*display: grid;*/
+  /*text-indent: 10%;*/
+  /*list-style-type: disc;*/
 }
 /*
 .map{
@@ -1048,6 +1075,10 @@ body {
 }
 
 @media (min-device-width: 199px) and (max-device-width: 1024px) and (orientation: portrait)  { 
+  br {
+    display: none;
+  }
+
   .menu_heading {
     font-size: 80px;
     pointer-events: none;
@@ -1163,6 +1194,9 @@ body {
     font-size: 80px;
     align-self: center;
   }
+  .about_list {
+    font-size: 50px;
+  }
 
   .map{
    width: 100%;
@@ -1173,6 +1207,12 @@ body {
     font-size: 50px;
  /*   overflow-y: auto;
     overflow-y: auto;*/
+    text-indent: 0;
+  }
+
+  .about_text_sale{
+    font-size: 50px;
+    padding-bottom:10%;
   }
 
   .button_up:before, .button_up:after,
