@@ -524,6 +524,44 @@ body {
   position: absolute;
 }
 
+.views_list {
+  text-align: center;
+  transition: 0.5s;
+}
+
+.close_views_cont{
+  background-image: url('../img/close.png');
+}
+
+.view_list_el_hide{
+  height: 0;
+  width: 0;
+  display: block;
+  color: black;
+  font-size: 0;
+  color: #fff;
+  text-shadow: 1px 0px 3px #000;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.view_list_el{
+  display: block;
+  color: black;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 0px 3px #000;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 5% 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.view_list_close_but {
+  text-align: end;
+}
+
 .cover_curtain {
   min-width: 100%;
   min-height: 100%;

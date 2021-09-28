@@ -23,87 +23,6 @@ let close_cont = document.getElementById('close_cont');
 let curtain = document.getElementById('curtain');
 let massage_sect = document.getElementById('massage_sect');
 
-// window.addEventListener('scroll', function() {
-//   let scroll_px = document.documentElement.scrollTop;
-//   let scroll_height = document.documentElement.scrollHeight;
-//   let scroll_procent = Math.floor((scroll_px / scroll_height) * 100);
-//   let scroll_proc = document.getElementById('scroll_proc');
-//   console.log(`скрол рх: ${scroll_procent} скролл высота: ${scroll_height}`)
-//   console.log(`итоговый процент: ${scroll_procent}`)
-//   if (scroll_procent > 30){
-//   	button_up.setAttribute('class', 'button_up');
-//   } else if (scroll_procent < 30 && button_up.className === 'button_up') {
-//   	button_up.setAttribute('class', 'button_up_hide');
-//   	setTimeout(()=>{
-//   	  button_up.setAttribute('class', 'hidden');	
-//   	}, 400);	
-//   } 
-
-//   if (scroll_procent >= 31) {
-//     button_right.setAttribute('class', 'button_right');
-//     button_left.setAttribute('class', 'button_left');
-//   }  else if (scroll_procent < 22 && button_right.className === 'button_right' && button_left.className === 'button_left') {
-//     button_right.setAttribute('class', 'button_right_hide');
-//     button_left.setAttribute('class', 'button_left_hide');
-//   	setTimeout(()=>{
-//   	  button_right.setAttribute('class', 'hidden');
-//   	  button_left.setAttribute('class', 'hidden');	
-//   	}, 400);
-//   }
-// });
-
-
-
-// function scroll_up() {
-// 	header.scrollIntoView({behavior: "smooth"});
-// }
-
-
-// function right_click(){
-// 	if(massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
-//     massage_view_1.setAttribute('class', 'massage_view_hide_r');
-// 	  setTimeout(()=>{
-// 		  massage_view_1.setAttribute('class', 'hidden');
-// 		  massage_view_2.setAttribute('class', 'massage_view_2_r');
-// 	  }, 200);
-//   } else if (massage_view_1.className === 'hidden' && massage_view_3.className === 'hidden') {
-//   	massage_view_2.setAttribute('class', 'massage_view_hide_r');
-// 	  setTimeout(()=>{
-// 		  massage_view_2.setAttribute('class', 'hidden');
-// 		  massage_view_3.setAttribute('class', 'massage_view_3_r');
-// 	  }, 200);
-//   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
-//     massage_view_3.setAttribute('class', 'massage_view_hide_r');
-// 	  setTimeout(()=>{
-// 		  massage_view_3.setAttribute('class', 'hidden');
-// 		  massage_view_1.setAttribute('class', 'massage_view_1_r');
-// 	  }, 200);
-//   }
-// }
-
-
-// function left_click(){
-//   if( massage_view_2.className === 'hidden' && massage_view_3.className === 'hidden') {
-//     massage_view_1.setAttribute('class', 'massage_view_hide_l');
-// 	  setTimeout(()=>{
-// 		  massage_view_1.setAttribute('class', 'hidden');
-// 		  massage_view_3.setAttribute('class', 'massage_view_3_l');
-// 	  }, 200);
-//   } else if (massage_view_1.className === 'hidden' && massage_view_2.className === 'hidden') {
-//   	massage_view_3.setAttribute('class', 'massage_view_hide_l');
-// 	  setTimeout(()=>{
-// 		  massage_view_3.setAttribute('class', 'hidden');
-// 		  massage_view_2.setAttribute('class', 'massage_view_2_l');
-// 	  }, 200);
-//   } else if (massage_view_3.className === 'hidden' && massage_view_1.className === 'hidden') {
-//   	massage_view_2.setAttribute('class', 'massage_view_hide_l');
-// 	  setTimeout(()=>{
-// 		  massage_view_2.setAttribute('class', 'hidden');
-// 		  massage_view_1.setAttribute('class', 'massage_view_1_l');
-// 	  }, 200);
-//   }
-// }
-
  
 function head_mass_show() {
  sessionStorage.setItem('show_views', "show")
@@ -141,18 +60,18 @@ function close_views() {
 		header_mass_views.setAttribute('class', 'hidden_views');
 		header.setAttribute('class', 'header header_no_blur');
 		cover_curtain_hide();
-		// console.log('4');
 	}, 600);
 }
 
-// function scroll_to_view(event) {
-//   let click_event = event.target;
-//   switch (click_event.textContent){
-//     case "обо мне":
-//       massage_sect.scrollIntoView({behavior: "smooth"}); 
-//       break;   
-//   }
-// }
+function head_mass_show_2(){
+	 const views_list = document.querySelectorAll('#view_list_el')
+	 console.log(views_list)
+	 for(let i = 0; i < views_list.length; i++){
+	   views_list[i].setAttribute('class','view_list_el')
+	 }
+  // view_list_el.setAttribute('class', 'view_list_el')
+}
+
 
 function show_contact() {
   header.setAttribute('class', 'header header_blur');
@@ -206,35 +125,5 @@ function cond_views(){
 
 cond_views()
 
-// const cordX = [];
-// const cordY = [];
 
-// massage_sect.addEventListener('touchstart', touchSt);
-// massage_sect.addEventListener('touchend', touchOf);
-
-// function touchSt(event) {
-// 	cordX[0] = event.changedTouches[0].clientX;
-// 	cordY[0] = event.changedTouches[0].clientY;
-// } 
-
-
-// function touchOf(event) {
-// 	cordY[1] = event.changedTouches[0].clientY;
-//   cordX[1] = event.changedTouches[0].clientX;
-
-//   let st = cordX[0];
-//   let end = cordX[1];
-//   let stY = cordY[0];
-//   let endY = cordY[1];
-//   let y = stY - endY;
-//   if (st > end && st - end > 300 && y > -100 && y < 100) {
-//   	right_click();
-//   	console.log(`вправо ${y}`);
-//   } else if (st < end && end - st > 300 && y > -100 && y < 100) {
-//   	left_click();
-//   	console.log(`влево ${y}`);
-//   } else {
-//   	console.log(`вниз ${y}`);
-//   }
-// }
  
