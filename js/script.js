@@ -25,7 +25,7 @@ let massage_sect = document.getElementById('massage_sect');
 
  
 function head_mass_show() {
- sessionStorage.setItem('show_views', "show")
+
 	header.setAttribute('class', 'header header_blur');
 	close_but.setAttribute('class', 'head_close');
 	cover_curtain();
@@ -42,7 +42,7 @@ function head_mass_show() {
 }
 
 function close_views() {
-  sessionStorage.setItem('show_views', "hide")
+
 	view_3.setAttribute('class', 'head_v_opac');
 	header_mass_views.setAttribute('class', 'head_mass_down');
 	// console.log('1');
@@ -64,10 +64,23 @@ function close_views() {
 }
 
 function head_mass_show_2(){
+	 sessionStorage.setItem('show_views', "show")
 	 const views_list = document.querySelectorAll('#view_list_el')
 	 console.log(views_list)
+	 view_list_el_close.setAttribute('class', 'views_cl_but_show')
 	 for(let i = 0; i < views_list.length; i++){
 	   views_list[i].setAttribute('class','view_list_el')
+	 }
+  // view_list_el.setAttribute('class', 'view_list_el')
+}
+
+function head_mass_close_2(){
+	 sessionStorage.setItem('show_views', "hide")
+	 const views_list = document.querySelectorAll('#view_list_el')
+	 console.log(views_list)
+	 view_list_el_close.setAttribute('class', 'view_list_el_hide')
+	 for(let i = 0; i < views_list.length; i++){
+	   views_list[i].setAttribute('class','view_list_el_hide')
 	 }
   // view_list_el.setAttribute('class', 'view_list_el')
 }
@@ -105,21 +118,10 @@ function cover_curtain_hide() {
 function cond_views(){
 	let views_condition = sessionStorage.getItem('show_views')
 	if(views_condition === "show") {
-		 header.setAttribute('class', 'header header_blur_ss');
-	  close_but.setAttribute('class', 'head_close_ss');
-	  cover_curtain();
-   view_1.setAttribute('class', 'head_view_ss')
-		 view_2.setAttribute('class', 'head_view_ss');
-	 	header_mass_views.setAttribute('class', 'header_massage_views_ss');
-   view_3.setAttribute('class', 'head_view_ss');
+		head_mass_show_2()
   }
   else {
-
-	  close_but.setAttribute('class', 'hidden');
-   view_1.setAttribute('class', 'hidden')
-		 view_2.setAttribute('class', 'hidden');
-	 	header_mass_views.setAttribute('class', 'hidden');
-   view_3.setAttribute('class', 'hidden');
+  head_mass_close_2()
   }
 }
 

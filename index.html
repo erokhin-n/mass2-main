@@ -21,10 +21,12 @@
 				<li><div class="menu_heading">Детский и взрослый массаж</div></li>
 				<li class="views_list">
 				  <div class="menu_link" onclick = 'head_mass_show_2()'>виды массажа</div>
-				  <div class="view_list_el_hide view_list_close_but" id="view_list_el">закрыть</div>
-      <a href="" class="view_list_el_hide" id="view_list_el">Детский массаж</a>
-      <a href="" class="view_list_el_hide" id="view_list_el">Взрослый классический массаж</a>
-      <a href="" class="view_list_el_hide" id="view_list_el">Применение лечебных банок (Вакуум терапия)</a>
+      <div class="views_list_cont">
+        <div class="view_list_el_hide" id="view_list_el_close" onclick='head_mass_close_2()'>[ x ]</div>
+        <a class="view_list_el_hide" id="view_list_el" href="baby_massage.html">Детский массаж</a>
+        <a class="view_list_el_hide" id="view_list_el" href="adult_classic_massage.html">Взрослый классический массаж</a>
+        <a class="view_list_el_hide" id="view_list_el" href="medical_banks.html">Применение лечебных банок (Вакуум терапия)</a>
+      </div>
 				</li>
 				<li><a class="menu_link" href="https://n587623.yclients.com/">онлайн запись</a></li>
 				<!-- <li><div class="menu_link" onclick='scroll_to_view(event)'>обо мне</div></li> -->
@@ -37,9 +39,9 @@
 		<section class="massage_views" id='massage_sect'>
     	<div class="hidden_views" id='header_mass_views'>
 			  <div class="head_close_opac" onclick = 'close_views()' id= "close_but"><span class="cross"></span></div>
-			  <a class="hidden" id = "head_view_1" href="baby_massage.html">Детский массаж</a>
-			  <a class="hidden" id = "head_view_2" href="adult_classic_massage.html">Взрослый классический массаж</a>
-			  <a class="hidden" id = "head_view_3" href="medical_banks.html">Применение лечебных банок (Вакуум терапия)</a>
+			  <a class="hidden" id = "head_view_1" >Детский массаж</a>
+			  <a class="hidden" id = "head_view_2" >Взрослый классический массаж</a>
+			  <a class="hidden" id = "head_view_3" >Применение лечебных банок (Вакуум терапия)</a>
 		  </div>
 		  <div class="hidden" id = 'contact_cont'>
 		    <div class="hidden" onclick = 'close_contact()' id= "close_cont">
