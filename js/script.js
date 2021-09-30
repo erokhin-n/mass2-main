@@ -23,66 +23,23 @@ let close_cont = document.getElementById('close_cont');
 let curtain = document.getElementById('curtain');
 let massage_sect = document.getElementById('massage_sect');
 
- 
-function head_mass_show() {
-
-	header.setAttribute('class', 'header header_blur');
-	close_but.setAttribute('class', 'head_close');
-	cover_curtain();
-	setTimeout(()=> {
-		view_1.setAttribute('class', 'head_view');
-	}, 200);
-	setTimeout(()=> {
-		view_2.setAttribute('class', 'head_view');
-		header_mass_views.setAttribute('class', 'header_massage_views');
-	}, 400);
-	setTimeout(()=>{
-		view_3.setAttribute('class', 'head_view');
-	}, 600);
-}
-
-function close_views() {
-
-	view_3.setAttribute('class', 'head_v_opac');
-	header_mass_views.setAttribute('class', 'head_mass_down');
-	// console.log('1');
-	setTimeout(()=> {
-		view_2.setAttribute('class', 'head_v_opac');
-		// console.log('2')
-	}, 200);
-	setTimeout(()=> {
-		view_1.setAttribute('class', 'head_v_opac');
-		// header_mass_views.setAttribute('class', 'header_massage_views_opac')
-		// console.log('3')
-	}, 400);
-	setTimeout(()=>{
-		close_but.setAttribute('class', 'head_close_opac');
-		header_mass_views.setAttribute('class', 'hidden_views');
-		header.setAttribute('class', 'header header_no_blur');
-		cover_curtain_hide();
-	}, 600);
-}
 
 function head_mass_show_2(){
 	 sessionStorage.setItem('show_views', "show")
 	 const views_list = document.querySelectorAll('#view_list_el')
-	 console.log(views_list)
 	 view_list_el_close.setAttribute('class', 'views_cl_but_show')
 	 for(let i = 0; i < views_list.length; i++){
 	   views_list[i].setAttribute('class','view_list_el')
 	 }
-  // view_list_el.setAttribute('class', 'view_list_el')
 }
 
 function head_mass_close_2(){
 	 sessionStorage.setItem('show_views', "hide")
 	 const views_list = document.querySelectorAll('#view_list_el')
-	 console.log(views_list)
 	 view_list_el_close.setAttribute('class', 'view_list_el_hide')
 	 for(let i = 0; i < views_list.length; i++){
 	   views_list[i].setAttribute('class','view_list_el_hide')
 	 }
-  // view_list_el.setAttribute('class', 'view_list_el')
 }
 
 
