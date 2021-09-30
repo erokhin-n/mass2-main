@@ -1,29 +1,5 @@
 "use strict";
 
-let header = document.getElementById('header');
-let massage_view_1 = document.getElementById('massage_view_1');
-let massage_view_2 = document.getElementById('massage_view_2');
-let massage_view_3 = document.getElementById('massage_view_3');
-let desc_cont = document.getElementById('description_cont');
-let desc_head = document.getElementById('desc_head');
-let desc_text = document.getElementById('desc_text');
-let img = document.getElementById('desc_img');
-let header_mass_views = document.getElementById('header_mass_views');
-let about_sect = document.getElementById('about_sect');
-let button_right = document.getElementById('button_right');
-let button_left = document.getElementById('button_left');
-let button_up = document.getElementById('button_up');
-let view_1 = document.getElementById('head_view_1');
-let	view_2 = document.getElementById('head_view_2');
-let	view_3 = document.getElementById('head_view_3');
-let contact_cont = document.getElementById('contact_cont');
-let close_but = document.getElementById('close_but');
-let contacts = document.getElementById('contacts');
-let close_cont = document.getElementById('close_cont');
-let curtain = document.getElementById('curtain');
-let massage_sect = document.getElementById('massage_sect');
-
-
 function head_mass_show_2(){
 	 sessionStorage.setItem('show_views', "show")
 	 const views_list = document.querySelectorAll('#view_list_el')
