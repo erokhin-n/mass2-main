@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:yandex="http://news.yandex.ru"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:turbo="http://turbo.yandex.ru"
+     version="2.0">
+    <channel>
+        <!-- Информация о сайте-источнике -->
+        <title>Детский и взрослый массаж</title>
+        <link>https://www.kosonogoff.ru</link>
+        <description>Сайт для записи на массаж к сертифицированному медицинскому специалисту с 10-летним опытом</description>
+        <language>ru</language>
+        <turbo:analytics></turbo:analytics>
+        <turbo:adNetwork></turbo:adNetwork>
+        <item turbo="true">
+            <!-- Информация о странице -->
+            <turbo:extendedHtml>true</turbo:extendedHtml>
+            <link>https://www.kosonogoff.ru</link>
+            <turbo:source>https://www.kosonogoff.ru</turbo:source>
+            <turbo:topic>Детский и взрослый массаж</turbo:topic>
+            <pubDate>29.08.2021</pubDate>
+            <author>Олег Косоногов</author>
+            <metrics>
+                <yandex schema_identifier="Идентификатор">
+                    <breadcrumblist>
+                        <breadcrumb url="https://kosonogoff.ru/baby_massage.html" text="Детский массаж"/>
+                        <breadcrumb url="https://kosonogoff.ru/adult_classic_massage.html" text="Взрослый классический массаж"/>
+                        <breadcrumb url="https://kosonogoff.ru/medical_banks.html" text="Применение лечебных банок (Вакуум терапия)"/>
+                    </breadcrumblist>
+                </yandex>
+            </metrics>
+            <yandex:related></yandex:related>
+            <turbo:content>
+                <![CDATA[
+                  <p class="about_text">Сертифицированный специалист в области детского и взрослого<br/> лечебного массажа. Более 10 лет работы в ведущем научно-практическом <br/>реабилитационном центре России.</p>
+                  <ul class="about_ul">
+                    <li class="about_list">Индивидуальный подход к каждому клиенту;</li>
+                    <li class="about_list">Бесплатные консультации;</li>
+                    <li class="about_list">Сопровождение клиента на всем протяжении курса массажа;</li>
+                    <li class="about_list">Комплексный подход с применением различных, доказано<br> эффективных массажных техник.</li>
+                   </ul>
+                <span class="about_text_sale">Действуют постоянные скидки и акции!</span><br/><br/>
+                <ul class="about_ul">
+                  <li class="about_list">Прием ведется в уютном, чистом и обустроенном массажном кабинете</li>
+                  <li class="about_list">Для клиентов на личном транспорте бесплатная парковка;</li>
+                  <li class="about_list">Для клиентов на общественном транспорте рядом метро Маяковская и автобусная остановка;</li>
+                </ul>
+                <p class="about_text">Данный сайт был создан для предоставления и оказания услуг<br/> массажа, лечебной гимнастики, применения баночной (вакуум)<br/> терапии для взрослых, детей и подростков. Будьте здоровы!<br/><br/>
+                С уважением, Косоногов Олег Олегович.
+                </p>
+                <img src="https://www.kosonogoff.ru/img/photo_1.jpg"
+                ]]>
+            </turbo:content>
+        </item>
+        <item turbo="true">
+            ...
+            <turbo:content>
+                <![CDATA[
+                    <!-- Содержимое 2 страницы --> 
+                ]]>
+            </turbo:content>
+        </item>
+        ...
+    </channel>
+</rss>
+
+
